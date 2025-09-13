@@ -1,0 +1,52 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    font: 300 100%/1.5 Raleway, serif;
+    margin: auto;
+    max-width: 1440px;
+    flex: 1;
+    margin-bottom: 64px;
+}
+
+
+/*------------------------------------- Responsive Bereich------------------------------------------------------------------------ */
+
+@media (max-width: 900px){
+
+    .main{
+       text-align: center;
+    }
+}
+
+@media (max-width: 490px){
+
+.main {
+    font-size: 14px;
+
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+}
+

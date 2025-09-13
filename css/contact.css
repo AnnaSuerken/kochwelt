@@ -1,0 +1,139 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  font: 300 100%/1.5 Raleway, serif;
+  color: #333;
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin: auto;
+  flex: 1;
+}
+
+
+.form {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #dad8d8;
+  height: 470px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+
+.kontakt-formular {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #dad8d8;
+  height: 470px;
+}
+
+.container-kontakt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4%;
+}
+
+.container-email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4%;
+}
+
+.container-message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4%;
+}
+
+.input {
+  border-radius: 5px;
+  width: 280px;
+  height: 30px;
+  border: none;
+}
+
+.input-message {
+  height: 160px;
+  width: 280px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #008000;
+  width: 100px;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+ button:hover {
+  background-color: rgb(0, 192, 0);
+ }
+
+h2 {
+font-size: 18px;
+}
+
+.submit {
+  color: #ccc;
+}
+
+/* -------------Responsive--------- */
+
+@media (max-width: 400px) {
+  .input {
+    border-radius: 5px;
+    width: 230px;
+  }
+
+  .input-message {
+    height: 140px;
+    width: 230px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .kontakt-formular {
+    max-width: 280px;
+    height: 450px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Raleway, serif;
+    font-size: 20px;
+  }
+
+  .container-kontakt {
+    font-weight: 400;
+  }
+
+  .container-email {
+    font-weight: 400;
+  }
+
+  .container-message {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+    <link rel="icon" type="image/png" href=" ./img/logo_small.png">
+    <link rel="stylesheet" href="./css/recipe-of-the-day.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./font/font.css">
+    <script src="./js/calculator.js"></script> 
+    <link rel="stylesheet" href="./css/toggle-menu.css">
+    <script src="js/toggle-menu.js"></script>
+
+</head>
+
+<body>
+    <Header>
+        <section class="header-width">
+        <div id="header_logo"><a href="index.html"><img src="./img/logo.png" alt="header_logo"></a></div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <a class="link" href="index.html">Start</a>
+                <a class="link" href="rezept-des-tages.html">Rezept des Tages</a>
+                <a class="link" href="kontakt.html">Kontakt</a>
+                <a class="link" href="impressum.html">Impressum</a>
+        </ul>
+        </nav>
+        <div class="burger-menu" id="burgerMenu" onclick="toggleMenu()"> &#9776; </div>
+        </section>
+</Header>
+<div class="head2" id="head2">
+    <nav class="navcontainer" id="navcontainer">
+        <ul>
+                <a class="link" href="impressum.html">Impressum</a>
+                <a class="link" href="contact.html">Kontakt</a>
+                <a class="link" href="rezept-des-tages.html">Rezept des Tages</a>
+                <a class="link" href="index.html">Start</a>      
+        </ul>  
+    </nav>
+</div>
+
+    <main>
+        <section class="dish-title">
+            <h1>Brokkoli-Nudelauflauf mit Käsesauce</h1>
+            <img class="dish-img" src="./img/nudelauflauf.jpg" alt="Nudelauflauf">
+            <div class="preparation-icons">
+            <span class="preparation-icons-background"><img class="preparation-img" src="./img/clock-regular.svg" alt="Zubereitungszeit"> 40 Min.</span>
+            <span class="preparation-icons-background"><img class="preparation-img" src="./img/brain-solid.svg" alt="Schwierigskeitsgrad"> Simpel</span>
+            <span class="preparation-icons-background"><img class="preparation-img" src="./img/calendar-alt-regular.svg" alt="Datum"> 06.03.2025</span>
+            </div>
+        </section>
+
+        <div class="break"></div>
+
+        <section class="ingredients" id="ingredients">
+            <div class="portions">
+                <span>Zutaten für <input type="number" id="ingredientsValue" max="20" min="1" value="1" required>
+                <button onclick="calculateIngredients()" class="button">Portionen</button></span>
+                <p id="errorMessage"></p>
+            </div>
+        
+        <table class="ingredients-table" id="ingredientsTable">
+            <tr>
+                <td class="td-left" id="AmountBrokkoli">0.5</td>
+                <td class="td-right">Brokkoli</td>
+            </tr>
+            <tr>
+                <td class="td-left" id="AmountNudeln">125 g</td>
+                <td class="td-right">Nudeln</td>
+            </tr>
+            <tr>
+                <td class="td-left" id="AmountKochschinken">25 g</td>
+                <td class="td-right">Kochschinken</td>
+            </tr>
+            <tr>
+                <td class="td-left" id="AmountSchmelzkaese">100 g</td>
+                <td class="td-right">Kräuterschmelzkäse</td>
+
+            </tr>
+            <tr>
+                <td class="td-left" id="AmountSchmand">100 g</td>
+                <td class="td-right">Schmand</td>
+            </tr>
+            <tr>
+                <td class="td-left" id="AmountSahne">100 ml</td>
+                <td class="td-right">Sahne oder Milch</td>
+            </tr>
+            <tr>
+                <td class="td-left" id="AmountKaese">0,5 Beutel</td>
+                <td class="td-right">Käse</td>
+            </tr>
+        
+        </table>
+        </section>
+
+        <section class="preparation">
+        <h2>Zubereitung</h2>
+        <div class="preparation-icons">
+            <span class="preparation-icons-background"><img class="preparation-img" src="./img/clock-regular.svg" alt="Zubereitungszeit"> Vorbereitung ca. 10 Minuten</span>
+            <span class="preparation-icons-background"><img class="preparation-img" src="./img/clock-regular.svg" alt="Zubereitungszeit"> Gesamtzeit ca. 40 Minuten</span>
+        </div>
+        <span class="preparation-text">Brokkoli ca. 5 Minuten kochen und parallel die Nudeln bissfest garen und den Schinken würfeln. Den Kräuterschmelzkäse, den Schmand und die Sahne bzw. die Milch mit Gewürzen in
+            einem Topf erhitzen bis alles geschmolzen ist. Anschließend alles gemeinsam in eine Auflaufform geben und den geriebenen Käse darüber streuen. Zum Schluss alles bei 180°C 
+            Ober-/Unterhitze oder 175°C Umluft 20 - 30 Minuten backen.</span>
+        </section>
+    
+    
+        <section class="author">
+            <h3>Rezept erstellt von</h3>
+                <div class="profile">
+                    <img class="author-img" src="./img/profil_anna.jpg">
+                    <span class="profile-text">Anna</span>
+                </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <div class="sektion-footer">
+            <div class="footer-logo-img">
+                <a href="index.html"><img class="footer-logo" src="./img/logo.png" alt="header-logo"></a>
+                <div class="policy-legal">
+                    <a href="impressum.html" class="footer-link">Impressum</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="footer-logo-links" src="./img/facebook_logo.png"></img></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="footer-logo-links" src="./img/instagrram_logo.png"></img></a>
+                <a href="https://x.com/" target="_blank">
+                    <img class="footer-logo-links" src="./img/twitter_logo.png"></img></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

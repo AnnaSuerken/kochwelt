@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/toggle-menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <script src="js/toggle-menu.js"></script>
+    <script src="./js/contact.js"></script>
+    <link rel="icon" type="image/png" href=" ./img/logo_small.png">
+    <title>Kontak</title>
+</head>
+
+<body>
+
+    <Header>
+        <section class="header-width">
+            <div id="header_logo"><a href="index.html"><img src="./img/logo.png" alt="header_logo"></a></div>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <a class="link" href="index.html">Start</a>
+                    <a class="link" href="rezept-des-tages.html">Rezept des Tages</a>
+                    <a class="link" href="kontakt.html">Kontakt</a>
+                    <a class="link" href="impressum.html">Impressum</a>
+                </ul>
+            </nav>
+            <div class="burger-menu" id="burgerMenu" onclick="toggleMenu()"> &#9776; </div>
+        </section>
+</Header>
+<div class="head2" id="head2">
+    <nav class="navcontainer" id="navcontainer">
+        <ul>
+            <a class="link" href="impressum.html">Impressum</a>
+            <a class="link" href="kontakt.html">Kontakt</a>
+            <a class="link" href="rezept-des-tages.html">Rezept des Tages</a>
+            <a class="link" href="index.html">Start</a>       
+        </ul>  
+    </nav>
+</div>
+
+    <main>
+
+        <form class="kontakt-formular" onsubmit="sendMail(event)">
+            <label>
+                <h2>Kontaktieren Sie uns!</h2>
+
+                <div class="container-kontakt">
+                    Name
+                   <input class="input" type="name" name="Your Name">
+                   </div>
+            </label>
+            <label>
+                <div class="container-email">
+                Ihre E-mail:
+                <input class="input" type="email" name="email">
+                </div>
+            </label>
+
+            <label>
+                <div class="container-message">
+                Ihre Nachricht:
+                <textarea class="input-message" name="message"></textarea>
+                </div>
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    
+
+    </main>
+
+    <footer>
+
+        <div class="sektion-footer">
+            <div class="footer-logo-img">
+                <img class="footer-logo" src="./img/logo.png" alt="header-logo">
+                <div class="policy-legal">
+                    <a href="impressum.html" class="footer-link">Impressum</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="footer-logo-links" src="./img/facebook_logo.png"></img></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="footer-logo-links" src="./img/instagrram_logo.png"></img></a>
+                <a href="https://x.com/" target="_blank">
+                    <img class="footer-logo-links" src="./img/twitter_logo.png"></img></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

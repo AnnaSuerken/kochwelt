@@ -1,0 +1,34 @@
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 240px;
+    font-size: 28px;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font: 300 100%/1.5 Raleway, serif;
+  }
+  
+  main {
+    font: 300 100%/1.5 Raleway, serif;
+    color: #333;
+    overflow-x: hidden;
+    max-width: 1440px;
+    margin: auto;
+    flex: 1;
+  }
+
+footer {
+    position: absolute;
+}
+
+  @media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+  }

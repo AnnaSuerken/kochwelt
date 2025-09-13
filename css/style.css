@@ -1,0 +1,351 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contentbereich */
+
+.main {
+    font: 300 100%/1.5 Raleway, serif;
+    margin: auto;
+    max-width: 1440px;
+    flex: 1;
+}
+
+/* Rezept des Tages Bereich */
+.hauptrezept {
+    display: flex;
+    margin-top: 64px;
+    gap: 64px;
+    margin-bottom: 64px;
+    
+}
+
+.hauptrezept_img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hauptrezept_info {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3%;
+}
+
+h2 {
+    margin: 0%;
+}
+
+.button {
+    width: 160px;
+    background-color: #008000;
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 64px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+
+
+.button:hover {
+    background-color: rgb(0, 192, 0);
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Lust auf was neues Bereich */
+
+.secondContentBox {
+    background-color: rgb(239, 239, 239);
+    padding: 15px;
+    margin-top: 34px;
+    margin-bottom: 64px;
+}
+
+.img {
+    height: 180px;
+    width: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.secondContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: Raleway, serif;
+    font-size: 20px;
+}
+
+/* Taste Discovery Bereich */
+
+.taste-discovery-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 32px;
+    margin:auto;
+    gap: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.taste-discovery-container img {
+    border-radius: 3%;
+    object-fit: cover;
+    width: 500px;
+}
+
+.taste-discovery-container h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.taste-discovery-container h3,
+h4 {
+    color: #34495e;
+}
+
+.taste-discovery-container p {
+    display: revert;
+    /* Setzt das Standard-Display-Verhalten zurück */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: normal;
+    /* Setzt das Unicode-Bidi-Verhalten zurück */
+    line-height: 1.6;
+    color: #555;
+}
+
+.taste-discovery-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.taste-discovery-container li {
+    margin-bottom: 10px;
+}
+
+.taste-discovery-container strong {
+    color: #e74c3c;
+}
+
+.taste-discovery-container button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(49, 129, 33);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taste-discovery-container button:hover {
+    background-color: rgb(39, 103, 27);
+}
+
+.quelle {
+    display: none;
+}
+
+
+/*------------------------------------- Responsive Bereich------------------------------------------------------------------------ */
+@media (max-width: 1520px) {
+    .hauptrezept {
+        display: flex;
+        margin-top: 64px;
+        gap: 64px;
+        margin-bottom: 64px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .secondContentBox {
+        background-color: rgb(239, 239, 239);
+        padding: 15px;
+        margin-top: 34px;
+        margin-bottom: 64px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .secondContentBox {
+        text-align: center;
+        padding: 0px;
+    }
+
+
+    .secondContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Taste Discovery Bereich */
+
+    .taste-discovery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 860px) {
+
+    /* Hauptrezept Bereich */
+
+    .main {
+        margin: auto;
+    }
+
+
+    .hauptrezept {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hauptrezept_img {
+        width: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .hauptrezept_info {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+    }
+
+    /* Lust auf was neues Bereich */
+
+    .secondContentBox {
+        text-align: center;
+        padding: 0px;
+    }
+
+
+    .secondContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Taste Discovery Bereich */
+
+    .taste-discovery-container {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .taste-discovery-container img {
+        width: 350px;
+    }
+
+    #a {
+        order: 1;
+    }
+
+    #b {
+        order: 2;
+    }
+
+}
+
+
+@media (max-width: 470px) {
+
+    /* Hauptrezept Bereich */
+
+
+    .main {
+        max-width: 470px;
+    }
+
+    .hauptrezept_img {
+        width: 250px;
+    }
+
+    .hauptrezept_info {
+        width: 250px;
+    }
+
+
+    /* Second Content Bereich */
+
+    .secondContentBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .img {
+        width: 248px;
+    }
+
+
+    /* Taste Discovery Bereich */
+
+    .taste-discovery-container {
+        width: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    .taste-discovery-container img {
+        width: 248px;
+    }
+
+    h1 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
